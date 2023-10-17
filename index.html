@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandas</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body class="content" style="max-width:1250px; margin: 0 auto;">
+
+
+    <header class="pandas-header">
+        <div class="logo-home">
+            <a href="#" class="logo-link">
+                <img src="images\pandas-logo-r.png" alt="Pandas Logo" width="150px">
+            </a>
+        </div>
+        <div class="menu-bar">
+            <ul class="navigation-menu">
+                <li class>
+                    <a href="#men" class="menu-ele">MEN</a>
+                </li>
+                <li class>
+                    <a href="#women" class="menu-ele">WOMEN</a>
+                </li>
+                <li class>
+                    <a href="#kids" class="menu-ele">KIDS</a>
+                </li>
+                <li class="search">
+                    <button onclick="mySearch()" class="search-button">
+                            <img class="srch" src="assets\search.png" alt="open cart" width="20" height="20">
+                    </button>
+                </li>
+                <li class="cart">
+                    <button class="cart-button" onclick="openMyBag()">
+                        <img class="car" src="assets\bag.png" alt="open cart" width="24" height="23">
+                    </button>
+                </li>
+                <li class="profile">
+                    <button class="profile-button" onclick="openMyProfile()">
+                        <img class="prof" src="assets\user.png" alt="open cart" width="24" height="23">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main id="main" class="main-content" style="height: 120px;">
+
+
+
+        <!-- <div class="horizontal-scroll-1">
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 1">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 2">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 3">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 4">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 5">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 6">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 7">
+            </div>
+            <div class="section-1">
+              <img src="product-images\f1img.webp" alt="Image 8">
+            </div>
+        </div> -->
+
+
+        <div class="product1">
+            <div class="p1-content">
+                <div class="p1-wrapper">
+
+                </div>
+                <div class="p1-img">
+                    <figure class="p1-img-bg"></figure>
+                </div>
+                <div class="p1-links">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product2">
+            <div class="p2-content">
+                <div class="p2-wrapper">
+
+                </div>
+                <div class="p2-img">
+                    <figure class="p2-img-bg"></figure>
+                </div>
+                <div class="p2-links">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grp-unit1">
+            <div class="product-grp-1">
+                <div class="pr1">
+                    <div class="pr1-content">
+                        <div class="pr1-wrapper">
+        
+                        </div>
+                        <div class="pr1-img">
+                            <figure class="pr-img-bg" style="background-image: url('display-images/ph dog 4.jpg');"></figure>
+                        </div>
+                        <div class="pr1-links">
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="pr2">
+                    <div class="pr2-content">
+                        <div class="pr2-wrapper">
+        
+                        </div>
+                        <div class="pr2-img">
+                            <figure class="pr-img-bg"  style="background-image: url('display-images/ph fam 9.jpg');"></figure>
+                        </div>
+                        <div class="pr2-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product-grp-2">
+                <div class="pr3">
+                    <div class="pr3-content">
+                        <div class="pr3-wrapper">
+        
+                        </div>
+                        <div class="pr3-img">
+                            <figure class="pr-img-bg"  style="background-image: url('display-images/ph wo 1.jpg');"></figure>
+                        </div>
+                        <div class="pr3-links">
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="pr4">
+                    <div class="pr4-content">
+                        <div class="pr4-wrapper">
+        
+                        </div>
+                        <div class="pr4-img">
+                            <figure class="pr-img-bg"  style="background-image: url('display-images/ph men 2.jpg');"></figure>
+                        </div>
+                        <div class="pr4-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product-grp-3">
+                <div class="pr5">
+                    <div class="pr5-content">
+                        <div class="pr5-wrapper">
+        
+                        </div>
+                        <div class="pr5-img">
+                            <figure class="pr-img-bg"  style="background-image: url('display-images/ph wo8.jpg');"></figure>
+                        </div>
+                        <div class="pr5-links">
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="pr6">
+                    <div class="pr6-content">
+                        <div class="pr6-wrapper">
+        
+                        </div>
+                        <div class="pr6-img">
+                            <figure class="pr-img-bg"  style="background-image: url('display-images/ph fam 1.jpg');"></figure>
+                        </div>
+                        <div class="pr6-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="phrase1" >
+            <h1 class="text1">Festive specials.</h1>
+            <h1 class="text2">All the reasons to rejoice.</h1>   
+        </div>
+        
+        <div class="horizontal-scroll-2">
+            <div class="section-2">
+                <img src="product-images\f1img.webp" alt="Image 1">
+            </div>
+            <div class="section-2">
+                <img src="product-images\f1img.webp" alt="Image 2">
+            </div>
+            <div class="section-2">
+                <img src="product-images\f1img.webp" alt="Image 3">
+            </div>
+            <div class="section-2">
+                <img src="product-images\f1img.webp" alt="Image 4">
+            </div>
+            <div class="section-2">
+                <img src="product-images\f1img.webp" alt="Image 3">
+            </div>
+            <div class="section-2">
+                <img src="product-images\f1img.webp" alt="Image 4">
+            </div>
+        </div>
+
+       
+        
+        
+        <!-- <section class="product-1">
+            <div class="p1-img-1">
+                <figure class="f1-image">
+                    <img src="product-images\f1img.webp" alt="f1-image">
+                </figure>
+            </div>
+        </section> -->
+       
+        <div class="slideshow-container">
+            <!-- Images -->
+            <img class="mySlides" src="images/ad_product2.webp">
+            <img class="mySlides" src="images/ad_product1.jpg">
+            <img class="mySlides" src="images/ad_product3.jpg">
+            <img class="mySlides" src="images/ad_product4.jpg">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <footer class="pandas-footer" lang="en" id="gfooter" role="contentinfo">
+            <p id="footnote-1">Welcome to Pandas! We are thrilled to present to you a splendid collection of dresses in various categories,
+                 ranging from casual wear to formal attire. Our aim is to provide you with a diverse selection that caters to your unique style preferences.
+                  At Pandas, we believe that everyone deserves to look and feel their best, which is why we offer our exquisite dresses at affordable prices.
+                  What's more, we understand that individuality matters, so we provide customization options to ensure that your dress perfectly reflects your personality.
+                   Explore our exclusive range and embark on a journey to find the perfect outfit that resonates with your distinct charm and elegance.</p>
+            <div class="divider"></div>
+
+            <div id="footnote-2">Copyright © 2023 Pandas Inc. All rights reserved.
+			</div>
+        </footer>
+
+
+    </main>
+
+
+          
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -48,5 +48,26 @@ function scrollFunction() {
     }
 }
 
+var isExtended = false;
 
+function mySearch() {
+    isExtended = !isExtended;
+    var header = document.querySelector('.pandas-header');
+    header.classList.toggle('extended');
+    var searchDiv = document.getElementById('searchDiv');
+    if (isExtended) {
+        searchDiv.style.display = "block";
+        document.getElementById('searchInput').focus();
+      } else {
+        searchDiv.style.display = "none";
+      }
+  
+  }
 
+  function returnHeader() {
+    var header = document.querySelector('.pandas-header');
+    header.classList.remove('extended');
+    isExtended = false;
+    var searchDiv = document.getElementById('searchDiv');
+    searchDiv.style.display = "none";
+  }

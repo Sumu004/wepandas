@@ -4,32 +4,51 @@ body{
   background-color: rgb(255, 255, 255);
   display: flex auto;
   justify-content: center;
-
-  
 }
 
 
 
 .pandas-header {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffff;
+  background-color: #ffffff;
   padding: 10px;
+
   width: 100%;
   position: relative;
+  height: 50px;
+  transition: height 0.3s;
+}
+
+.header-content {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo-home{
+  display: flex;
+  align-items: left;
+  padding: 15px;
+  padding-left: 100px;
 }
 
 .scrolled {
   background-color: #f9f9f9; /* Change the background color for the scrolled header */
 }
 
+.extended {
+  height: 400px !important;
+}
 
 .menu-bar {
   display: flex;
   align-items: center;
   margin-left: auto;
-  
+  padding-right: 100px;
 }
 
 .navigation-menu {
@@ -54,13 +73,45 @@ body{
   display: flex;
   align-items: center;
   margin-left: auto;
+
 }
 
 .search-button{
   border: none;
   background: none;
   cursor: pointer;
+
 }
+
+.search-div {
+  display: none;
+  padding: 100px;
+  list-style: none;
+}
+
+#searchInput {
+  border: none;
+  background-color: transparent;
+  height: 34px;
+  width: 50%;
+  font-size: 26px;
+  font-weight: 400;
+  outline: none;
+  padding-left: 8px;
+  caret-shape: 10;
+  position: relative;
+  color: #3f3f3f;
+  font-family: sans-serif;
+  caret-color: #3f3f3f;
+}
+
+#searchInput::placeholder {
+  font-size: 28px;
+  
+  font-weight: 600;
+}
+
+
 
 .car{
   opacity: 0.82;

@@ -6,8 +6,6 @@ body{
   justify-content: center;
 }
 
-
-
 .pandas-header {
   display: block;
   justify-content: space-between;
@@ -201,11 +199,6 @@ body{
 } 
 
 
-
-
-
-
-
 .horizontal-scroll {
   
   display: flex;
@@ -357,7 +350,7 @@ body{
   padding-top: 2%;
   
   font-size: 22px;
-  text-align: left;
+  text-align: justify;
   line-height: 1.6;
   color: #555;
 }
@@ -390,9 +383,10 @@ body{
 }
 
 .cloth-des{
-  text-align: left;
+  text-align: justify;
   font-size: 20px;
   line-height: 1.6;
   color: #2c2b2b;
   font-weight: 400;
+
 }
